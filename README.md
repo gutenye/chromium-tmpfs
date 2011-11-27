@@ -35,7 +35,15 @@ Put it into crontab
 
 Put it into hibernate and suspend
 
-	see https://wiki.archlinux.org/index.php/Pm-utils#Creating_your_own_hooks
+	# /etc/pm/sleep.d/20-tmpfs.conf
+		#!/bin/bash
+		case $1 in
+				hibernate|suspend)
+						/etc/rc.d/chromium-tmpfs save
+						;;
+		esac
+
+see https://wiki.archlinux.org/index.php/Pm-utils#Creating_your_own_hooks
 
 Install
 ----------
