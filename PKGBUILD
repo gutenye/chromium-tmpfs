@@ -3,9 +3,9 @@
 pkgname="chromium-tmpfs"
 pkgver=0.4
 pkgrel=5
-pkgdesc="Sync all ~/.config/chromium and ~/.cache/chromium directories to tmpfs at boot and stop time"
+pkgdesc="Sync all ~/.config/chromium and ~/.cache/chromium directories to tmpfs"
 arch=(any)
-url=https://bbs.archlinux.org/viewtopic.php?id=118576
+url="https://github.com/GutenYe/chromium-tmpfs"
 license=('MIT-LIENCE')
 depends=('chromium' 'rsync')
 source=(  rc.chromium-tmpfs
