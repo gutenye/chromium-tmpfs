@@ -33,6 +33,10 @@ Put it into crontab
 		# every 15 minutes
 		15 * * * * /etc/rc.d/chromium-tmpfs save
 
+Put it into hibernate and suspend
+
+	see https://wiki.archlinux.org/index.php/Pm-utils#Creating_your_own_hooks
+
 Install
 ----------
 
