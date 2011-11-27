@@ -10,17 +10,17 @@ chromium-tmpfs, sync Chromium profile to tmpfs
 Overview
 --------
 
-	for ArchLinux system.
+For Arch Linux. 
 
 Usage
 -----
 
 Normal use
 
-	$ rc.d start chromium-tmpfs # move profiles to tmpfs
-	$ rc.d stop chromium-tmpfs  # sync profiles to your disk
-	$ rc.d restart chromium-tmpfs # stop and start
-	$ rc.d save chromium-tmpfs  # sync your profile to your disk, but do not stop using tmpfs
+	$ sudo rc.d start chromium-tmpfs # move profiles to tmpfs
+	$ sudo rc.d stop chromium-tmpfs  # sync profiles to your disk
+	$ sudo rc.d restart chromium-tmpfs # stop and start
+	$ sudo rc.d save chromium-tmpfs  # sync your profile to your disk, but do not stop using tmpfs
 
 Put it into startup
 
