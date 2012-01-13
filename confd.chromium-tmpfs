@@ -7,5 +7,5 @@
 # TMPFS=/tmp
 
 # list of users separated by spaces, default is all
-# USERS="`ls -d -c1 /home/*/.mozilla | cut -d/ -f3`"
-# USERS=""
+# USERS="`ls -d -c1 /home/*/.config/chromium | cut -d/ -f3`"
+# USERS="foo bar"
