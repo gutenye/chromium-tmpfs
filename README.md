@@ -1,71 +1,12 @@
 chromium-tmpfs, sync Chromium profile to tmpfs
 ================================================
 
-| Homepage:      |  https://github.com/GutenYe/chromium-tmpfs       |
-|----------------|------------------------------------------------------       |
-| Author:	       | Guten Ye                                                 |
-| License:       | MIT-LICENSE                                                |
-| Issue Tracker: | https://github.com/GutenYe/chromium-tmpfs/issues |
+**Deprecated**. use 
 
-Overview
---------
+* [profile-sync-daemon](https://bbs.archlinux.org/viewtopic.php?pid=1026974): sync browser profiles to tmpfs.
+* [user-profile-sync](https://github.com/GutenYe/user-profile-sync): sync browser profiles to tmpfs at user level.
 
-For Arch Linux. 
-
-Usage
------
-
-Normal use
-
-	$ sudo rc.d start chromium-tmpfs # move profiles to tmpfs
-	$ sudo rc.d stop chromium-tmpfs  # sync profiles to your disk
-	$ sudo rc.d restart chromium-tmpfs # stop and start
-	$ sudo rc.d save chromium-tmpfs  # sync your profile to your disk, but do not stop using tmpfs
-
-Put it into startup
-
-	# /etc/rc.conf
-		DAEMONS=(... @chromium-tmpfs ...)
-
-Put it into crontab
-
-	$ sudo crontabe -e
-		# every 15 minutes
-		15 * * * * /etc/rc.d/chromium-tmpfs save
-
-Put it into hibernate and suspend
-
-	# /etc/pm/sleep.d/20-tmpfs.conf
-		#!/bin/bash
-		case $1 in
-				hibernate|suspend)
-						/etc/rc.d/chromium-tmpfs save
-						;;
-		esac
-
-see https://wiki.archlinux.org/index.php/Pm-utils#Creating_your_own_hooks
-
-Install
-----------
-
-	# install chromium-tmpfs from AUR 
-	pacaur -S chromium-tmpfs
-
-Contributing
--------------
-
-* Feel free to join the project and make contributions (by submitting a pull request)
-* Submit any bugs/features/ideas to issue tracker
-
-Credits
---------
-
-* [Contributors](https://github.com/GutenYe/chromium-tmpfs/contributors)
-
-Resources
----------
-
-* [firefox-tmpfs-daemon](https://bbs.archlinux.org/viewtopic.php?id=118576) sync firefox profiles to tmpfs
+instead
 
 Copyright
 ---------
